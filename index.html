@@ -1,25 +1,50 @@
-<h1>&#127800;　My Summer　&#127800;
+<body>
+  <header>
+    <h1>&#127800;　My Summer　&#127800;</h1>
+</header>
 
-</h1>
-
-<h2> 
-Summer 2021/22
-</h2>
+<main>
+ <h2> Summer 2021/22</h2>
 
 <p>
   I went back to my home in Tokyo. Japan is in the northern hemisphere, so it was winter. In Japan, I spent time with my family and met with friends.
 </p>
 <p>What I did:</p>
-<ul>
 
+<ul>
 <li> Catching up with my friends many times </li>
 <li> Visiting junior high school I attend when I was in Japan </li>
 <li> Sightseeing New Zealand</li>
 </ul>
+<div>
+  <img src="IMG_2738.JPG">
+  <img src="IMG_2588.JPG">
+  <img src="IMG_DB6A6004774B-1.jpeg">
+  <img src="IMG_2360.JPG">
+</div>
+</main>
+<footer>
+  <p>
+    &copy; Yuka Craighead 2023
+  </p>
+</footer>
+</body>
 <style>
+  body {
+    display: grid;
+    grid: " h    m    .  " auto
+          " .    m    .  " auto
+          " .    m    f  " auto
+          / auto auto auto;
+
+  }
+  
+  header { grid-area: h; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
  h1 {
-    background-color: LavenderBlush;
-    font-family: courier;
+  background-color: LavenderBlush;
+  font-family: courier;
   font-size: 3em;
   color: orange;
   text-align: center;
@@ -48,5 +73,7 @@ Summer 2021/22
   font-size: 1em;
   color:gray;
   }
-
-</style>
+  img {
+  border-radius: 50%;
+  height: 10rem;
+  }
